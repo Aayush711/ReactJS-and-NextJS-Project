@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "homepage" : "https://github.com/Aayush711/React.js-and-Next.js-Project"
   },
   "dependencies": {
     "autoprefixer": "10.4.15",
