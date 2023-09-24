@@ -4,6 +4,16 @@ import 'bootstrap/dist/css/bootstrap.css';
 const Dashboard_Projects = () => {
   const colors = ['#163763', '#3452B9', '#005483', '#8E8E8E', '#3C3C3C'];
   const [buttons, setButtons] = useState([]);
+
+  useEffect(() => {
+    const initialButtons = Array.from({ length: 5 }, (_, index) => ({
+      projectName: `Project ${index + 1}`,
+      managerName: `Manager ${index + 1}`,
+      color: colors[index % colors.length],
+    }));
+    setButtons(initialButtons);
+  }, []); 
+
   const lastButtonRef = useRef(null);
 
   const addNewButton = () => {
